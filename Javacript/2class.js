@@ -2,7 +2,7 @@ class Human{
     constructor(){
         this.gender="Male";
     }
-    printGender(){
+    printGender=()=>{
         console.log(this.gender);
     }
 }
@@ -19,3 +19,22 @@ class Person extends Human{
 const person=new Person();
 person.printName();
 person.printGender();
+
+//another way using Arrow function
+// class Human{
+//         this.gender="Male";
+//     printGender=()=>{
+//         console.log(this.gender);
+//     }
+// }
+// class Person extends Human{
+//         this.name="Amlendra";
+//         //this.gender="female";
+//     }
+//     printName=()=>{
+//         console.log(this.name);
+//     }
+// }
+// const person=new Person();
+// person.printName();;
+// person.printGender();
